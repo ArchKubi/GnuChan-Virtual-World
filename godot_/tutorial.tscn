@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tutorial.gd" type="Script" id=1]
+[ext_resource path="res://font_/Leoch Nisa.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=2]
+size = 82
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_right = 1024.35
+margin_bottom = 600.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_styles/normal = SubResource( 1 )
+text = " "
+script = ExtResource( 1 )
