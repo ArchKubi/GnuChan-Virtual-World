@@ -1,6 +1,6 @@
 extends KinematicBody
 
-var speed = 10
+var speed = 2.5
 
 
 var h_acceleration = 6
@@ -9,7 +9,7 @@ var normal_acceleration = 6
 
 
 var gravity = 20
-var jump = 10
+var jump = 0
 var full_contact = false
 
 
@@ -24,21 +24,14 @@ var gravity_vec = Vector3()
 onready var head = $head
 onready var ground_check = $groundCh
 
-
-####################################################################
-var run = false
-var timer = 3.0
-####################################################################
-
-
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
-		head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
-		head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+#		head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
+#		head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
 
 func _physics_process(delta):
 	
@@ -59,15 +52,20 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 		gravity_vec = Vector3.UP * jump
 
-
-	if Input.is_action_pressed("w"):
-		direction -= transform.basis.z
-	elif Input.is_action_pressed("s"):
-		direction += transform.basis.z
-	if Input.is_action_pressed("a"):
-		direction -= transform.basis.x
-	elif Input.is_action_pressed("d"):
-		direction += transform.basis.x
+	if gl.sit == true:
+		if Input.is_action_pressed("w"):
+			direction += transform.basis.z
+		elif Input.is_action_pressed("s"):
+			direction -= transform.basis.z
+		if Input.is_action_pressed("a"):
+			direction += transform.basis.x
+		elif Input.is_action_pressed("d"):
+			direction -= transform.basis.x
+	if gl.sit == false:
+		if Input.is_action_pressed("w"):
+			direction += transform.basis.z
+		elif Input.is_action_pressed("s"):
+			direction -= transform.basis.z
 
 	direction = direction.normalized()
 	h_velocity = h_velocity.linear_interpolate(direction * speed, h_acceleration * delta)

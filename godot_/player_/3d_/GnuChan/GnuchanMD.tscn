@@ -1,0 +1,190 @@
+[gd_scene load_steps=58 format=2]
+
+[ext_resource path="res://player_/3d_/GnuChan/gnuChanBody.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player_/3d_/GnuChan/sit_gamegirl_idl.anim" type="Animation" id=2]
+[ext_resource path="res://player_/3d_/GnuChan/sit_deck_play.anim" type="Animation" id=3]
+[ext_resource path="res://player_/3d_/GnuChan/sit_gamegirl_play.anim" type="Animation" id=4]
+[ext_resource path="res://player_/3d_/GnuChan/sit_computer_idl.anim" type="Animation" id=5]
+[ext_resource path="res://font_/Silverkids.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://player_/3d_/GnuChan/sit_idl.anim" type="Animation" id=7]
+[ext_resource path="res://player_/animTree.gd" type="Script" id=8]
+[ext_resource path="res://player_/3d_/GnuChan/sit_deck_idl.anim" type="Animation" id=9]
+[ext_resource path="res://player_/3d_/GnuChan/sit_bye.anim" type="Animation" id=10]
+[ext_resource path="res://player_/3d_/GnuChan/GnuchanMD.gd" type="Script" id=11]
+[ext_resource path="res://player_/3d_/GnuChan/sit_computer_use.anim" type="Animation" id=12]
+[ext_resource path="res://player_/3d_/GnuChan/stend_idl.anim" type="Animation" id=13]
+[ext_resource path="res://player_/3d_/GnuChan/stend_idl_normal.anim" type="Animation" id=14]
+[ext_resource path="res://player_/3d_/GnuChan/stend_walk_forward.anim" type="Animation" id=15]
+[ext_resource path="res://player_/3d_/GnuChan/stend_walk_backword.anim" type="Animation" id=16]
+
+[sub_resource type="AnimationNodeAnimation" id=46]
+animation = "sit_computer_use"
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "sit_bye"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "sit_computer_idl"
+
+[sub_resource type="AnimationNodeAnimation" id=29]
+animation = "sit_computer_use"
+
+[sub_resource type="AnimationNodeAnimation" id=33]
+animation = "sit_deck_idl"
+
+[sub_resource type="AnimationNodeAnimation" id=34]
+animation = "sit_deck_play"
+
+[sub_resource type="AnimationNodeAnimation" id=35]
+animation = "sit_gamegirl_idl"
+
+[sub_resource type="AnimationNodeAnimation" id=36]
+animation = "sit_gamegirl_play"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "sit_idl"
+
+[sub_resource type="AnimationNodeAnimation" id=56]
+animation = "stend_idl"
+
+[sub_resource type="AnimationNodeAnimation" id=57]
+animation = "stend_idl_normal"
+
+[sub_resource type="AnimationNodeAnimation" id=52]
+animation = "stend_walk_backword"
+
+[sub_resource type="AnimationNodeAnimation" id=55]
+animation = "stend_walk_forward"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=11]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=37]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=38]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=39]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=40]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=41]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=42]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=43]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=44]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=45]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=47]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=48]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=58]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=59]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=60]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=61]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=62]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=63]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=64]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=65]
+
+[sub_resource type="AnimationNodeStateMachine" id=23]
+states/computer_use/node = SubResource( 46 )
+states/computer_use/position = Vector2( 140, -79 )
+states/sit_bye/node = SubResource( 1 )
+states/sit_bye/position = Vector2( -346, -50 )
+states/sit_computer_idl/node = SubResource( 2 )
+states/sit_computer_idl/position = Vector2( -62, -118 )
+states/sit_computer_use/node = SubResource( 29 )
+states/sit_computer_use/position = Vector2( -62, -192 )
+states/sit_deck_idl/node = SubResource( 33 )
+states/sit_deck_idl/position = Vector2( -238, 25 )
+states/sit_deck_play/node = SubResource( 34 )
+states/sit_deck_play/position = Vector2( -238, 90 )
+states/sit_gamegirl_idl/node = SubResource( 35 )
+states/sit_gamegirl_idl/position = Vector2( 140, 6 )
+states/sit_gamegirl_play/node = SubResource( 36 )
+states/sit_gamegirl_play/position = Vector2( 140, 84 )
+states/sit_idl/node = SubResource( 8 )
+states/sit_idl/position = Vector2( -62, -50 )
+states/stend_idl/node = SubResource( 56 )
+states/stend_idl/position = Vector2( -360, -210 )
+states/stend_idl_normal/node = SubResource( 57 )
+states/stend_idl_normal/position = Vector2( -360, -118 )
+states/stend_walk_backword/node = SubResource( 52 )
+states/stend_walk_backword/position = Vector2( -637, -218 )
+states/stend_walk_forward/node = SubResource( 55 )
+states/stend_walk_forward/position = Vector2( -672, -84 )
+transitions = [ "sit_bye", "sit_idl", SubResource( 11 ), "sit_idl", "sit_bye", SubResource( 12 ), "sit_computer_idl", "sit_computer_use", SubResource( 30 ), "sit_computer_use", "sit_computer_idl", SubResource( 31 ), "sit_idl", "sit_computer_idl", SubResource( 32 ), "sit_deck_idl", "sit_deck_play", SubResource( 37 ), "sit_deck_idl", "sit_idl", SubResource( 38 ), "sit_deck_play", "sit_deck_idl", SubResource( 39 ), "sit_gamegirl_idl", "sit_gamegirl_play", SubResource( 40 ), "sit_gamegirl_play", "sit_gamegirl_idl", SubResource( 41 ), "sit_idl", "sit_gamegirl_idl", SubResource( 42 ), "sit_gamegirl_idl", "sit_idl", SubResource( 43 ), "sit_idl", "sit_deck_idl", SubResource( 44 ), "sit_computer_idl", "sit_idl", SubResource( 45 ), "sit_idl", "computer_use", SubResource( 47 ), "computer_use", "sit_idl", SubResource( 48 ), "stend_walk_backword", "stend_idl_normal", SubResource( 58 ), "stend_idl_normal", "stend_walk_backword", SubResource( 59 ), "stend_idl_normal", "stend_walk_forward", SubResource( 60 ), "stend_walk_forward", "stend_idl_normal", SubResource( 61 ), "stend_idl_normal", "stend_idl", SubResource( 62 ), "stend_idl", "stend_idl_normal", SubResource( 63 ), "stend_idl_normal", "sit_idl", SubResource( 64 ), "sit_idl", "stend_idl_normal", SubResource( 65 ) ]
+graph_offset = Vector2( -746, -289 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=24]
+
+[sub_resource type="DynamicFont" id=49]
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 21
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="GnuchanMD" type="Spatial"]
+script = ExtResource( 11 )
+
+[node name="gnuChanBody" parent="." instance=ExtResource( 1 )]
+
+[node name="anim" type="AnimationPlayer" parent="gnuChanBody"]
+anims/sit_bye = ExtResource( 10 )
+anims/sit_computer_idl = ExtResource( 5 )
+anims/sit_computer_use = ExtResource( 12 )
+anims/sit_deck_idl = ExtResource( 9 )
+anims/sit_deck_play = ExtResource( 3 )
+anims/sit_gamegirl_idl = ExtResource( 2 )
+anims/sit_gamegirl_play = ExtResource( 4 )
+anims/sit_idl = ExtResource( 7 )
+anims/stend_idl = ExtResource( 13 )
+anims/stend_idl_normal = ExtResource( 14 )
+anims/stend_walk_backword = ExtResource( 16 )
+anims/stend_walk_forward = ExtResource( 15 )
+
+[node name="animTree" type="AnimationTree" parent="gnuChanBody/anim"]
+tree_root = SubResource( 23 )
+anim_player = NodePath("..")
+active = true
+parameters/playback = SubResource( 24 )
+script = ExtResource( 8 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 4.0
+margin_top = 5.0
+margin_right = 69.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 49 )
+text = "Durum:-> "
+
+[node name="situation" type="Label" parent="CanvasLayer/Label"]
+margin_left = 53.0
+margin_top = -3.0
+margin_right = 160.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 50 )
+text = "situation"
