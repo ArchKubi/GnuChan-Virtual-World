@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://player_/player.gd" type="Script" id=1]
 [ext_resource path="res://player_/3d_/GnuChan/GnuchanMD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RotCamera.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.526152
@@ -43,3 +44,10 @@ shape = SubResource( 4 )
 [node name="groundCh" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00512516, 0 )
 cast_to = Vector3( 0, -0.2, 0 )
+
+[node name="pivotRot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.14998, 0 )
+script = ExtResource( 3 )
+
+[node name="Camera" type="Camera" parent="pivotRot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.299774, -0.195781, 2.32008 )

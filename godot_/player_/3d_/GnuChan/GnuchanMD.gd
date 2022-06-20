@@ -2,7 +2,7 @@ extends Spatial
 
 
 onready var gnuChan64 = get_node("gnuChanBody/fly_desk")
-onready var gnuChan64_screen = get_node("gnuChanBody/GnuChanRig/Skeleton/BoneAttachment/Screen")
+onready var gnuChan64_screen = get_node("gnuChanBody/Screen")
 onready var gnuChanGameGirl = get_node("gnuChanBody/GnuChanRig/Skeleton/GnuChan_GameGirl_0")
 onready var gnuchanDeck = get_node("gnuChanBody/GnuChanRig/Skeleton/GnuChanDeck_0")
 

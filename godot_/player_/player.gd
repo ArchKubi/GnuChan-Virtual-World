@@ -5,7 +5,7 @@ var speed = 2.5
 
 var h_acceleration = 6
 var air_acceleration = 1
-var normal_acceleration = 6
+var normal_acceleration = 10
 
 
 var gravity = 20
@@ -28,10 +28,13 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and gl.camera == false:
 		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
 #		head.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
 #		head.rotation.x = clamp(head.rotation.x, deg2rad(-89), deg2rad(89))
+
+
+
 
 func _physics_process(delta):
 	
@@ -61,11 +64,15 @@ func _physics_process(delta):
 			direction += transform.basis.x
 		elif Input.is_action_pressed("d"):
 			direction -= transform.basis.x
-	if gl.sit == false:
+	if gl.sit == false and gl.talk == false:
 		if Input.is_action_pressed("w"):
 			direction += transform.basis.z
 		elif Input.is_action_pressed("s"):
 			direction -= transform.basis.z
+	
+	if Input.is_action_just_pressed("esc"):
+		get_tree().change_scene("res://Main.tscn")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 	direction = direction.normalized()
 	h_velocity = h_velocity.linear_interpolate(direction * speed, h_acceleration * delta)
