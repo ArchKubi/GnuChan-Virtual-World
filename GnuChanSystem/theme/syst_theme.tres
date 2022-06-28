@@ -1,0 +1,33 @@
+[gd_resource type="Theme" load_steps=6 format=2]
+
+[sub_resource type="StyleBoxLine" id=29]
+color = Color( 0.592157, 0, 1, 1 )
+thickness = 10
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=32]
+color = Color( 0.592157, 0, 1, 1 )
+thickness = 10
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=33]
+color = Color( 0.592157, 0, 1, 1 )
+thickness = 10
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=30]
+color = Color( 0.141176, 0.00784314, 0.266667, 1 )
+thickness = 10
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=31]
+color = Color( 0.141176, 0.00784314, 0.266667, 1 )
+thickness = 10
+vertical = true
+
+[resource]
+VScrollBar/styles/grabber = SubResource( 29 )
+VScrollBar/styles/grabber_highlight = SubResource( 32 )
+VScrollBar/styles/grabber_pressed = SubResource( 33 )
+VScrollBar/styles/scroll = SubResource( 30 )
+VScrollBar/styles/scroll_focus = SubResource( 31 )
