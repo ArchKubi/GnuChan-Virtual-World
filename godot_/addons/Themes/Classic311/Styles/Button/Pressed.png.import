@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Pressed.png-7b5eece4c654e395f0e7a88bc6e81ffd.stex"
+path="res://.import/Pressed.png-d0912e981f2ad577a3c7f1dee218e6e8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Button/Pressed.png"
-dest_files=[ "res://.import/Pressed.png-7b5eece4c654e395f0e7a88bc6e81ffd.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Button/Pressed.png"
+dest_files=[ "res://.import/Pressed.png-d0912e981f2ad577a3c7f1dee218e6e8.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

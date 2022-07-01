@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SliderGrabVDis.png-b97dc110c90ae20aa3a8d47ffe1f9c74.stex"
+path="res://.import/SliderGrabVDis.png-4eae23ade0dccc732a9e0ccdd0c0f4c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Scroll/SliderGrabVDis.png"
-dest_files=[ "res://.import/SliderGrabVDis.png-b97dc110c90ae20aa3a8d47ffe1f9c74.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Scroll/SliderGrabVDis.png"
+dest_files=[ "res://.import/SliderGrabVDis.png-4eae23ade0dccc732a9e0ccdd0c0f4c3.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

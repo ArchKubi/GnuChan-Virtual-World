@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/close.png-83a457cf236e5cec9aff9cd35f62b648.stex"
+path="res://.import/close.png-0ddc75d1eea8e216e2544c92c535d7b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Window/close.png"
-dest_files=[ "res://.import/close.png-83a457cf236e5cec9aff9cd35f62b648.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Window/close.png"
+dest_files=[ "res://.import/close.png-0ddc75d1eea8e216e2544c92c535d7b1.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

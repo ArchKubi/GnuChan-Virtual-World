@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Panel.png-851cd92d1f3ca5ef1759d74432fc0d3b.stex"
+path="res://.import/Panel.png-d1221b4fd0eaa7580aae6f9c4027de9a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Panel/Panel.png"
-dest_files=[ "res://.import/Panel.png-851cd92d1f3ca5ef1759d74432fc0d3b.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Panel/Panel.png"
+dest_files=[ "res://.import/Panel.png-d1221b4fd0eaa7580aae6f9c4027de9a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Foreground.png-2c8b9f59da482a88d7880120b1d4e224.stex"
+path="res://.import/Foreground.png-28c1854c33ef4c5be9e627de124d5495.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/ProgressBar/Foreground.png"
-dest_files=[ "res://.import/Foreground.png-2c8b9f59da482a88d7880120b1d4e224.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/ProgressBar/Foreground.png"
+dest_files=[ "res://.import/Foreground.png-28c1854c33ef4c5be9e627de124d5495.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

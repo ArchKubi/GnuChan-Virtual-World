@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/False.png-5291b6446f8c309db4d76f8456c52ff9.stex"
+path="res://.import/False.png-24e13ea5a8f001f28ce050bd2de241bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Tree/False.png"
-dest_files=[ "res://.import/False.png-5291b6446f8c309db4d76f8456c52ff9.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Tree/False.png"
+dest_files=[ "res://.import/False.png-24e13ea5a8f001f28ce050bd2de241bb.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

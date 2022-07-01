@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hover.png-be693990b1936c64ea7de9bf68731225.stex"
+path="res://.import/Hover.png-5fba6d6ab303756569939be1bb56748b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Button/Hover.png"
-dest_files=[ "res://.import/Hover.png-be693990b1936c64ea7de9bf68731225.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Button/Hover.png"
+dest_files=[ "res://.import/Hover.png-5fba6d6ab303756569939be1bb56748b.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

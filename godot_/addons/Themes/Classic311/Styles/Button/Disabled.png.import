@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Disabled.png-e55f3ed6fe9d8fd655d596612419e003.stex"
+path="res://.import/Disabled.png-22ad516192bf70ae399e2121841a9375.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Button/Disabled.png"
-dest_files=[ "res://.import/Disabled.png-e55f3ed6fe9d8fd655d596612419e003.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Button/Disabled.png"
+dest_files=[ "res://.import/Disabled.png-22ad516192bf70ae399e2121841a9375.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

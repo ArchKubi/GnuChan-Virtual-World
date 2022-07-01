@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RadioTrue.png-68f03f250a865894edd5fc1591ca2be0.stex"
+path="res://.import/RadioTrue.png-e40ad21805817c4ac7dc5d9f3d034abd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/CheckBox/RadioTrue.png"
-dest_files=[ "res://.import/RadioTrue.png-68f03f250a865894edd5fc1591ca2be0.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/CheckBox/RadioTrue.png"
+dest_files=[ "res://.import/RadioTrue.png-e40ad21805817c4ac7dc5d9f3d034abd.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

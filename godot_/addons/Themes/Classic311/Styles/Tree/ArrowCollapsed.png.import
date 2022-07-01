@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArrowCollapsed.png-13e309283604d4bebb82f4c306111290.stex"
+path="res://.import/ArrowCollapsed.png-7c02e593755790bde0ec134af2d1705f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/Tree/ArrowCollapsed.png"
-dest_files=[ "res://.import/ArrowCollapsed.png-13e309283604d4bebb82f4c306111290.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/Tree/ArrowCollapsed.png"
+dest_files=[ "res://.import/ArrowCollapsed.png-7c02e593755790bde0ec134af2d1705f.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

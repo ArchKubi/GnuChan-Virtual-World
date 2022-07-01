@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/True.png-2497d9dbcfab8eb3fcf62ef70e34821f.stex"
+path="res://.import/True.png-c0e296c235a7dfcefa6eed27da2abb2a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/Classic311/Styles/CheckBox/True.png"
-dest_files=[ "res://.import/True.png-2497d9dbcfab8eb3fcf62ef70e34821f.stex" ]
+source_file="res://addons/Themes/Classic311/Styles/CheckBox/True.png"
+dest_files=[ "res://.import/True.png-c0e296c235a7dfcefa6eed27da2abb2a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
