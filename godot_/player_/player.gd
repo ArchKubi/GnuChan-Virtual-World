@@ -21,7 +21,7 @@ var h_velocity = Vector3()
 var movement = Vector3()
 var gravity_vec = Vector3()
 
-onready var head = $head
+onready var head = $body
 onready var ground_check = $groundCh
 
 func _ready():
@@ -64,6 +64,7 @@ func _physics_process(delta):
 			direction += transform.basis.x
 		elif Input.is_action_pressed("d"):
 			direction -= transform.basis.x
+
 	if gl.sit == false and gl.talk == false:
 		if Input.is_action_pressed("w"):
 			direction += transform.basis.z
@@ -71,7 +72,7 @@ func _physics_process(delta):
 			direction -= transform.basis.z
 	
 	if Input.is_action_just_pressed("esc"):
-		get_tree().change_scene("res://Main.tscn")
+		get_tree().change_scene("res://levels/Main.tscn")
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 	direction = direction.normalized()
