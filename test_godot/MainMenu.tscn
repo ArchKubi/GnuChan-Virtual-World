@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://fonts_/mangat.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://script/MainMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="tardisLevel" type="Button" parent="."]
+margin_left = 88.0
+margin_top = 105.0
+margin_right = 213.0
+margin_bottom = 146.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "Tardis"
+
+[connection signal="pressed" from="tardisLevel" to="." method="_on_tardisLevel_pressed"]
